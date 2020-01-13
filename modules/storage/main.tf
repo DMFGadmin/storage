@@ -1,4 +1,4 @@
-resource "google_storage_bucket" "afrl-bucket-001" {
+resource "google_storage_bucket" "afrl-bucket" {
   name     = var.name
   location = "US"
   project = var.project
