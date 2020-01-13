@@ -12,4 +12,14 @@ resource "google_storage_bucket" "afrl-bucket" {
       age = "360"
     }
   }
+  lifecycle_rule {
+    action {
+      type = "setStorageClass"
+      storage_class = "ColdLine"
+    }
+    condition {
+      age   =  "1500"
+      matches_storage_class = ["NearLine"]
+    }
+  }
 }
