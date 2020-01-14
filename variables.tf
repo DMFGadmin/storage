@@ -9,7 +9,3 @@ variable "service_project_2" {
 variable "bd_raw_ingest_bucket" {
   type  = string
 }
-
-variable "bd_curated_data_bucket" {
-  type  = string
-}
