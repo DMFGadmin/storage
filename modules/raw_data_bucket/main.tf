@@ -6,7 +6,7 @@ resource "google_storage_bucket" "afrl-bucket" {
   lifecycle_rule {
     action {
       type = "SetStorageClass"
-      storage_class = "Nearline"
+      storage_class = "NEARLINE"
     }
     condition {
       age = "360"
@@ -15,7 +15,7 @@ resource "google_storage_bucket" "afrl-bucket" {
   lifecycle_rule {
     action {
       type = "SetStorageClass"
-      storage_class = "ColdLine"
+      storage_class = "COLDLINE"
     }
     condition {
       age   =  "1500"
