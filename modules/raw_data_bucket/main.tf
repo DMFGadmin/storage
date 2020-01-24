@@ -19,7 +19,7 @@ resource "google_storage_bucket" "afrl-bucket" {
     }
     condition {
       age   =  "1500"
-      matches_storage_class = ["NearLine"]
+      matches_storage_class = ["NEARLINE"]
     }
   }
 }
